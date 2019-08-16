@@ -1,3 +1,13 @@
+@media screen and (max-width:500px) {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width:500px) {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -204,17 +214,16 @@ img {
 }
 .home .header-section {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  background-color: red;
   width: 60%;
 }
-.home .header-div {
+.home .that-div {
   border-bottom: 1px dashed #C0C0C0;
-  display: flex;
+  justify-content: center;
   flex-direction: column;
-}
-.home .header-div h2 {
-  padding: 1.8rem;
+  width: 65%;
+  margin: auto;
+  background-color: green;
 }
 .home .content-section {
   margin: 30px 0;
@@ -226,6 +235,7 @@ img {
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+  color: greenyellow;
 }
 .home .content-section img {
   border-radius: 10px;
