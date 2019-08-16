@@ -6,8 +6,8 @@
 
   .header-section {
     display: flex;
-    background-color: red;
-    width: 60%;
+    align-items: center;
+
 
 
 
@@ -17,14 +17,14 @@
     border-bottom: 1px dashed @silver;
     justify-content: center;
     flex-direction: column;
-    width: 65%;
     margin: auto;
-    background-color: green;
+    align-items: center;
+    width: 95%;
   }
 
-  // h2 {
-  //   padding: 1.8rem;
-  // }
+  h2 {
+    padding: 1.8rem;
+  }
 
 
 
@@ -34,10 +34,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+
     .text-content {
       width: 48%;
       padding-right: 1%;
-      color: greenyellow;
+
+
+
     }
 
     padding-left: 1%;
@@ -45,50 +48,57 @@
     img {
       border-radius: 10px;
     }
+
+
+  }
+}
+
+
+.inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed @navigation-border;
+
+  .text-content {
+    padding-left: 1%;
+    padding-right: 0;
   }
 
+  .img-content {
+    padding-right: 1%;
+    padding-left: 0;
+  }
+}
 
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+.content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
 
+  img {
+    border-radius: 10px;
+  }
+}
+
+.content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed @navigation-border;
+  display: flex;
+  justify-content: space-between;
+
+  .destination {
+    width: 30%;
+    margin-bottom: 30px;
+
+  }
+
+  @media @phone {
     .text-content {
-      padding-left: 1%;
-      padding-right: 0;
-    }
-
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
+      background-color: aqua;
     }
   }
+}
 
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
+.btn {
+  .custom-btn(@button-bg, 100%, #fff, 4rem);
 
-    img {
-      border-radius: 10px;
-    }
-  }
-
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
-
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-
-    }
-  }
-
-  .btn {
-    .custom-btn(@button-bg, 100%, #fff, 4rem);
-
-
-  }
 
 }
